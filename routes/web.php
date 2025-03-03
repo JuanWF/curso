@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 Route::get('/a', function () {
-    return "Hola mundo";
+    return "Hola muno";
 });
 Route::get('/jobs', function () {
 
