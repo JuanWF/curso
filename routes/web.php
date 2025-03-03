@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('index',  ['name' => 'index']);
     
 });
+
+Route::get('/a', function () {
+    return "Hola mundo";
+});
 Route::get('/jobs', function () {
 
     $jobs = Job::with('employer')->latest()->simplePaginate(3);
